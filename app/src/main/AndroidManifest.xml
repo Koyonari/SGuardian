@@ -13,18 +13,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SGuardian"
         tools:targetApi="31">
-
+        <activity
+            android:name=".ChildProfile"
+            android:exported="false" />
         <!-- Splash Activity (Set as Launcher) -->
         <activity
             android:name=".Splash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <!-- Home Activity -->
+        </activity> <!-- Home Activity -->
         <activity
             android:name=".Home"
             android:exported="false" />
