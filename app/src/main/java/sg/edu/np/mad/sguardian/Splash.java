@@ -24,6 +24,10 @@ public class Splash extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
+        // Hide the action bar for a cleaner UI that matches the wireframe
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().hide();
+        }
         setContentView(R.layout.activity_splash);
 
         // Enable edge-to-edge and handle system bars

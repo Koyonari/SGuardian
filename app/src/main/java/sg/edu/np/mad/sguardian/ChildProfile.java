@@ -16,6 +16,10 @@ public class ChildProfile extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // Hide the action bar for a cleaner UI that matches the wireframe
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().hide();
+        }
         setContentView(R.layout.activity_child_profile);
 
         // Profile Details
