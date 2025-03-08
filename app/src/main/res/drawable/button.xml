@@ -4,7 +4,4 @@
 
     <!-- Radius for all 4 corners -->
     <corners android:radius="16dp" />
-
-    <!-- Solid background color -->
-    <solid android:color="@color/blue_accent" />
 </shape>
